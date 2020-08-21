@@ -5,7 +5,51 @@
   padding: 30px;
 }
 
-.container-form {
+.container-doses h2 {
+  font-family:'Unica One', cursive;
+}
+
+.container-form-show {
   margin: 20px;
   width: 300px;
+}
+
+@media(max-width: 675px) {
+  .container-doses {
+    margin: -50px 10px 20px 10px;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .row {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .container-doses li {
+    list-style: none;
+  }
+
+  .header {
+    position: absolute;
+    top: 28%;
+    left: 30%;
+  }
+
+  .header h1 {
+  font-size: 100px;
+  color: white;
+  text-align: left;
+  }
+
+  .container-form-show {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .simple_form {
+    width: 100%;
+  }
+
 }

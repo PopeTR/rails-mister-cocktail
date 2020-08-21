@@ -1,5 +1,5 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top">
-  <%= link_to "/", class: "navbar-brand" do %>
+  <%= link_to "/", class: "navbar-icon" do %>
     <i class="fas fa-cocktail"></i>
   <% end %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,10 +7,12 @@
   </button>
 
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse navbar-icon" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item nav-link">
-        <%= link_to "🚀Add A Cocktail", new_cocktail_path%>
+        <%= link_to new_cocktail_path do %>
+          <i class="fas fa-plus"></i>
+        <% end %>
       </li>
     </ul>
   </div>
