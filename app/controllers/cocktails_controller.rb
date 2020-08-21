@@ -16,7 +16,7 @@ class CocktailsController < ApplicationController
     @cocktail = Cocktail.new(cocktail_params)
     # Will raise ActiveModel::ForbiddenAttributesError
     if @cocktail.save
-      redirect_to cocktail_path(@cocktail.id)
+      redirect_to cocktails_path
     else
       render :new
     end

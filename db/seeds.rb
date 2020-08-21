@@ -24,19 +24,9 @@ tomato_juice = Ingredient.new(name: "Tomato Juice")
 tomato_juice.save!
 
 
-mojito = Cocktail.create(name: "Mojito")
-metro = Cocktail.create(name: "Metropolitan")
-old_f = Cocktail.create(name: "Old Fashioned")
-
-x = Dose.create(description: "6 leaves", cocktail_id: mojito.id, ingredient_id: mint_leaves.id)
-y = Dose.create(description: "3 cubes", cocktail_id: mojito.id, ingredient_id: ice.id)
-z = Dose.create(description: "1 slice", cocktail_id: mojito.id, ingredient_id: lemon.id)
 
 [ lemon, ice, mint_leaves, rosemary, tomato_juice ].each do |ing|
   puts "Created #{ing.name}"
 end
 
-[ mojito, metro, old_f].each do |cock|
-  puts "Created #{cock.name}"
-end
 puts "Finished!"
